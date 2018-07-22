@@ -1,0 +1,56 @@
+/* Full-Page Formatting */
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header formatting */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkslategray;
+    color: white;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    margin: 2em;
+}
+
+a {
+    padding: 2em;
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    height: 2em;
+}
+
+/* Main content formatting */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin: 2em;
+}
+
+p {
+    margin: 0em, 2em, 2em, 2em;
+}
+
