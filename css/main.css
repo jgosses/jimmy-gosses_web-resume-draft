@@ -15,6 +15,11 @@ header {
     color: white;
 }
 
+body {
+    width: 100%;
+
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -25,7 +30,7 @@ h1 {
 }
 
 a {
-    padding: 2em;
+    padding: 1em;
     color: white;
     text-decoration: none;
 }
@@ -54,3 +59,34 @@ p {
     margin: 0em, 2em, 2em, 2em;
 }
 
+/* Tablet Formatting */
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/* Desktop Formatting */
+
+@media only screen and (min-width: 961px) {
+
+    a {
+        padding: 2em;
+    }
+
+    body {
+        margin: 0em auto;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 64em;
+    }
+    header {
+        margin: 0em 2em;
+    }
+    main {
+        margin: 0em 2em;
+    }
+
+}
