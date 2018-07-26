@@ -1,3 +1,6 @@
+/* Import fonts from Google */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Libre+Franklin|Work+Sans');
+
 /* Full-Page Formatting */
 
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
@@ -13,11 +16,12 @@ header {
     align-items: center;
     background-color: darkslategray;
     color: white;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 body {
     width: 100%;
-
+    font-family: 'Work Sans', sans-serif;
 }
 
 ul {
@@ -27,6 +31,7 @@ ul {
 
 h1 {
     margin: 2em;
+    font-size: 27px;
 }
 
 a {
@@ -41,6 +46,7 @@ li {
 
 nav {
     height: 2em;
+    font-size: 14px;
 }
 
 /* Main content formatting */
@@ -55,13 +61,21 @@ h2 {
     margin: 2em;
 }
 
-p {
-    margin: 0em, 2em, 2em, 2em;
+.lead-para {
+    max-width: 20em;
 }
 
 /* Tablet Formatting */
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+    
+    a {
+        padding: 2em 1.3em;
+    }
+    
+    .lead-para {
+        max-width: 30em;
+    }
 
 }
 
@@ -70,7 +84,7 @@ p {
 @media only screen and (min-width: 961px) {
 
     a {
-        padding: 2em;
+        padding: 4em;
     }
 
     body {
@@ -81,12 +95,21 @@ p {
         flex-direction: column;
         align-items: center;
         width: 64em;
+        font-size: 16px;
     }
     header {
         margin: 0em 2em;
     }
+    
+    h1 {
+        font-size: 40px;
+    }
     main {
         margin: 0em 2em;
+    }
+
+    .lead-para {
+        max-width: 64em;
     }
 
 }
