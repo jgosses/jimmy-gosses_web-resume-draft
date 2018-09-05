@@ -131,6 +131,11 @@ h4 {
     margin: 1em 0em;
 }
 
+.para-spacing {
+    padding: 1.5em 2em;
+    line-height: 40px;
+}
+
 /* Tablet Formatting */
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
