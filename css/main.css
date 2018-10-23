@@ -151,6 +151,11 @@ h4 {
     width: 10em;
 }
 
+#job-title-date {
+    text-decoration: none;
+    margin: .2em 0em;
+}
+
 /* Tablet Formatting */
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
