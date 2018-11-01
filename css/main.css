@@ -18,7 +18,13 @@ header {
     color: white;
     font-family: 'Libre Franklin', sans-serif;
     height: 14em;
+    /* background-image: url("../images/jimmy-headshot.jpg"); */
 }
+
+.headshot-image {
+    display: block;
+}
+
 
 body {
     width: 100%;
