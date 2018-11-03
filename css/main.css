@@ -13,21 +13,29 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
 header {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    justify-content: space-between;
     background-color: darkslategray;
     color: white;
     font-family: 'Libre Franklin', sans-serif;
     height: 14em;
-    /* background-image: url("../images/jimmy-headshot.jpg"); */
+    max-width: 64em;
+    background-image: url("../images/jimmy-headshot-min-header-mobileview.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
-.headshot-image {
-    display: block;
-}
+/* .headshot-image {
+    max-width: 100%;
+    max-height: auto;
+} */
 
 
 body {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    max-width: 64em;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -41,7 +49,7 @@ ul {
 }
 
 h1 {
-    margin: 2em;
+    /* margin: 2em; */
     font-size: 27px;
 }
 
@@ -60,13 +68,23 @@ li {
 }
 
 nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     height: 2em;
     font-size: 14px;
+    width: 100%;
 }
 
 .job-desc li {
     color: lightslategray;
 }
+
+/* .header-title {
+    display: flex;
+    align-items: start;
+} */
 
 /* Main content formatting */
 
@@ -168,6 +186,9 @@ h4 {
     
     header {
         height: 14em;
+        background-image: url("../images/jimmy-headshot-min-header-tabletview.jpg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
     }
 
     h1 { 
@@ -210,11 +231,14 @@ h4 {
     header {
         margin: 0em 2em;
         height: 14em;
+        background-image: url("../images/jimmy-headshot-min-forheader2.jpg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
     }
     
     h1 {
         font-size: 40px;
-        margin: 1.5em 6em;
+        /* margin: 1.5em 6em; */
     }
     main {
         margin: 0em 2em 2em 2em;
