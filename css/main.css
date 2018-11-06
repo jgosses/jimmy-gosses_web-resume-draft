@@ -66,6 +66,11 @@ h1 {
     padding: 0em 0em 0em 1em;
 }
 
+.tagline {
+    font-size: 21px;
+    width: 9em;
+}
+
 .navlink-mobile {
     padding: 0em 1em;
     color: white;
@@ -209,6 +214,11 @@ h4 {
         font-size: 27px;
     }
 
+    .tagline {
+        font-size: 27px;
+        width: 10em;
+    }
+
     .header-title {
         background-color: whitesmoke;
         border-radius: 30px;
@@ -265,6 +275,11 @@ h4 {
     h1 {
         font-size: 40px;
         /* margin: 1.5em 6em; */
+    }
+
+    .tagline {
+        font-size: 40px;
+        width: 10em;
     }
 
     .header-title {
