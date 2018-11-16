@@ -8,12 +8,19 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-/* Header formatting */
+body {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    max-width: 64em;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Header Format */
 
 header {
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
     justify-content: space-between;
     background-color: darkslategray;
     color: white;
@@ -29,41 +36,17 @@ header {
     background-color: whitesmoke;
     border-radius: 30px;
     padding: 0px 10px;
-    margin: .5em 0em 0em .5em;
+    margin: 10px 20px 10px -32px;
     font-size: 40px;
     color: black;
     text-decoration: none;
 }
 
-/* .headshot-image {
-    max-width: 100%;
-    max-height: auto;
-} */
-
-
-body {
+.icon-tagline {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    max-width: 64em;
-    font-family: 'Work Sans', sans-serif;
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-content {
-    flex-direction: row;
-}
-
-h1 {
-    /* margin: 2em; */
-    font-size: 27px;
-    height: 4em;
-    width: 10em;
-    padding: 0em 0em 0em 1em;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .tagline {
@@ -71,10 +54,33 @@ h1 {
     width: 9em;
 }
 
+/* .headshot-image {
+    max-width: 100%;
+    max-height: auto;
+} */
+
+/* Nav bar */
+
+.nav-content {
+    flex-direction: row;
+}
+
 .navlink-mobile {
+    display: none;
     padding: 0em 1em;
     color: white;
     text-decoration: none;
+}
+
+.toggle-nav-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
 }
 
 li {
@@ -85,32 +91,14 @@ li {
     margin: 5px;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 2em;
-    font-size: 13px;
-    width: 100%;
-}
+/* h1, h2, h3, h4 */
 
-.job-desc li {
-    color: lightslategray;
-}
-
-/* .header-title {
-    display: flex;
-    align-items: start;
-} */
-
-/* Main content formatting */
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0em 2em;
+h1 {
+    /* margin: 2em; */
+    font-size: 27px;
+    height: 4em;
+    width: 10em;
+    padding: 0em 0em 0em 1em;
 }
 
 h2 {
@@ -125,6 +113,25 @@ h3 {
 h4 {
     margin: 5px 0px;
     font-size: 20px;
+}
+
+/* nav {
+    display: none;
+} */
+
+
+/* .header-title {
+    display: flex;
+    align-items: start;
+} */
+
+/* Main content formatting */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0em 2em;
 }
 
 .lead-para {
@@ -143,6 +150,10 @@ h4 {
     flex-direction: column;
     height: 10em;
 }
+.job-desc li {
+    color: lightslategray;
+}
+
 .employment {
     display: flex;
     align-items: center;
@@ -198,24 +209,19 @@ h4 {
     margin: .2em 0em;
 }
 
-/* Tablet Formatting */
+/********* Tablet Formatting ***************/
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     
+    /* Header Format */
+
     header {
         /* height: 14em; */
+        flex-direction: column;
         height: 27em;
         background-image: url("../images/jimmy-headshot-min-desktop2.jpg");
         background-size: 100% auto;
         background-repeat: no-repeat;
-    }
-
-    nav {
-        font-size: 14px;
-    }
-
-    h1 { 
-        font-size: 27px;
     }
 
     .tagline {
@@ -232,10 +238,35 @@ h4 {
         color: black;
         text-decoration: none;
     }
-    
+
+    /* Nav Bar */
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 2em;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .toggle-nav-icon {
+        display: none;
+    }
+
     .navlink-mobile {
+        display: flex;
         padding: 0em 1em;
     }
+
+    /* h1, h2, h3, h4 */
+
+    h1 { 
+        font-size: 27px;
+    }
+
+    /* Main Content Formatting */
     
     .lead-para {
         max-width: 30em;
@@ -244,41 +275,22 @@ h4 {
     .job-desc {
         padding: 0 50px;
     }
-
 }
 
-/* Desktop Formatting */
+/************* Desktop Formatting ****************/
 
 @media only screen and (min-width: 961px) {
 
-    .navlink-mobile {
-        padding: 0em 4em;
-    }
+    /* Header Formatting */
 
-    body {
-        margin: 0em auto;
-        max-width: 80em;
-    }
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
-        align-items: center;
-        width: 64em;
-        font-size: 16px;
-    }
     header {
+        flex-direction: column;
         margin: 0em 2em;
         height: 43em;
         background-image: url("../images/jimmy-headshot-min-desktop2.jpg");
         background-size: 100% auto;
         background-repeat: no-repeat;
         max-width: 100%
-    }
-    
-    h1 {
-        font-size: 40px;
-        /* margin: 1.5em 6em; */
     }
 
     .tagline {
@@ -296,17 +308,52 @@ h4 {
         text-decoration: none;
     }
 
+    /* Nav bar */
+    
+    .navlink-mobile {
+        display: flex;
+        padding: 0em 4em;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+        width: 64em;
+        font-size: 16px;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .toggle-nav-icon {
+        display: none;
+    }
+
+    /* h1, h2, h3, h4 */
+
+    h1 {
+        font-size: 40px;
+        /* margin: 1.5em 6em; */
+    }
+    
+
+    /* Main Content Formatting */
+    
+    body {
+        margin: 0em auto;
+        max-width: 80em;
+    }
+
     main {
         margin: 0em 2em 2em 2em;
     }
 
     .lead-para {
         max-width: 64em;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
     }
 
     .education {
