@@ -90,6 +90,15 @@ nav {
     margin: 1em;
 }
 
+.ignore-nav-icon {
+    display: none;
+}
+
+.js-nav-build {
+    display: flex;
+    flex-direction: row;
+}
+
 ul {
     display: flex;
     flex-direction: column;
