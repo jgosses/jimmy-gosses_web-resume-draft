@@ -55,7 +55,9 @@ header {
 }
 
 #hamburger-nav-icon {
-    position: sticky;
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
 
 /* .headshot-image {
