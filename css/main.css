@@ -16,6 +16,10 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Header Format */
 
 header {
@@ -92,6 +96,9 @@ nav {
     flex-direction: row;
     align-items: center;
     margin: 1em;
+    font-size: 24px;
+    color: whitesmoke;
+    font-weight: bold;
 }
 
 .ignore-nav-icon {
@@ -101,6 +108,8 @@ nav {
 .js-nav-build {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 0em;
 }
 
 ul {

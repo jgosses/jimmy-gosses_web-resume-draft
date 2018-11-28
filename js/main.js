@@ -9,21 +9,31 @@ function openMobileNav() {
     if (navList.length > 0) {               // if the nav contains items    
         for (var i=0; i < navList.length; i++) {
             navList[i].className = 'js-nav-build';      //change this from toggle-nav-icon to toggle-main-nav
-        }
+        };
+        navIcon.innerHTML = "X";
     }
 }
-navIcon.addEventListener("click", openMobileNav, false);
 
-    /* if (navList2.length > 0) {
-                navList2[0].className = 'ignore-nav-icon';
-            }               I can't get this one right. goal is to make hamburger icon to disappear */ 
+// can't seem to get the close X functionality working correctly
+function closeMobileNav() {
+    if (navIcon.textContent === "X") {
+        navList.className = 'li.toggle-main-nav2';
+    };
+}
+
+navIcon.addEventListener("click", openMobileNav, false);
+navIcon.addEventListener("click", closeMobileNav, false);
+
+
+// i believe the below code is a cleaner way to perform the openMobileNav function, but i'm doing something wrong
+/* navIcon.addEventListener("click", e => {
+    if (e.target.navList.length > 0) {
+        for (var i=0; i < navList.length; i++) {
+            navList[i].className = 'js-nav-build';
+        }
+    }
+} */ 
 
 // when click on nav, i want the hamburger icon class to change from 'a.toggle-nav-icon' to 'toggle-main-nav'
 // after that, i want the li items that have 'toggle-main-nav' to change to 'js-nav-build'
 
-/* function openMobileNav() {
-    //navList2.className = 'toggle-main-nav';
-    navList.className = 'js-nav-build';
-} 
-
-navIcon.addEventListener("click", openMobileNav, false); */
