@@ -2,6 +2,8 @@
 var navIcon = document.getElementById('hamburger-nav-icon');
 var navList = document.querySelectorAll('li.toggle-main-nav2');
 var navList2 = document.querySelectorAll('toggle-nav-icon');
+var navClose = document.querySelector('hamburger-nav-icon')
+var navList3 = document.querySelector('js-nav-build');
 
 // if click on nav icon, toggle mobile open nav class and build out nav directions
 
@@ -15,14 +17,21 @@ function openMobileNav() {
 }
 
 // can't seem to get the close X functionality working correctly
-function closeMobileNav() {
+/* function closeMobileNav() {
     if (navIcon.textContent === "X") {
-        navList.className = 'li.toggle-main-nav2';
+        navList.classList.toggle('li.toggle-main-nav2');
     };
-}
+} */
 
+function closeMobileNav() {
+    navList3.addEventListener('click', e => {
+        if (e.target.textContent === "X") {
+            navList3.className = 'toggle-main-nav2';
+    };
+})
+}
 navIcon.addEventListener("click", openMobileNav, false);
-navIcon.addEventListener("click", closeMobileNav, false);
+//navIcon.addEventListener("click", closeMobileNav, false);
 
 
 // i believe the below code is a cleaner way to perform the openMobileNav function, but i'm doing something wrong
