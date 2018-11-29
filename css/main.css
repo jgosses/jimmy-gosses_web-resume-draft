@@ -16,6 +16,10 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Header Format */
 
 header {
@@ -72,15 +76,19 @@ nav {
     align-items: baseline;
 }
 .nav-content {
-    flex-direction: row;
+    flex-direction: column;
     height: 3em;
 }
 
 .navlink-mobile {
-    display: none;
+    /* display: none; */
     padding: 0em 1em;
     color: white;
     text-decoration: none;
+}
+
+.toggle-main-nav2 {
+    display: none;
 }
 
 .toggle-nav-icon {
@@ -88,6 +96,20 @@ nav {
     flex-direction: row;
     align-items: center;
     margin: 1em;
+    font-size: 24px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.ignore-nav-icon {
+    display: none;
+}
+
+.js-nav-build {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0em;
 }
 
 ul {
@@ -270,6 +292,10 @@ h4 {
         font-size: 14px;
     }
 
+    .nav-content {
+        flex-direction: row;
+    }
+
     .toggle-nav-icon {
         display: none;
     }
@@ -277,6 +303,10 @@ h4 {
     .navlink-mobile {
         display: flex;
         padding: 0em 1em;
+    }
+
+    .toggle-main-nav2 {
+        display: flex;
     }
 
     /* h1, h2, h3, h4 */
@@ -357,6 +387,14 @@ h4 {
 
     .toggle-nav-icon {
         display: none;
+    }
+
+    .toggle-main-nav2 {
+        display: flex;
+    }
+
+    .nav-content {
+        flex-direction: row;
     }
 
     /* h1, h2, h3, h4 */
