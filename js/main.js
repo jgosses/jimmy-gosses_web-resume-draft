@@ -7,41 +7,22 @@ var navList3 = document.querySelector('js-nav-build');
 
 // if click on nav icon, toggle mobile open nav class and build out nav directions
 
-function openMobileNav() {
+navIcon.addEventListener("click", openMobileNav => {
     if (navList.length > 0) {               // if the nav contains items    
         for (var i=0; i < navList.length; i++) {
             navList[i].className = 'js-nav-build';      //change this from toggle-nav-icon to toggle-main-nav
         };
         navIcon.innerHTML = "X";
     }
-}
+})
 
-// can't seem to get the close X functionality working correctly
-/* function closeMobileNav() {
-    if (navIcon.textContent === "X") {
-        navList.classList.toggle('li.toggle-main-nav2');
-    };
-} */
-
-function closeMobileNav() {
-    navList3.addEventListener('click', e => {
-        if (e.target.textContent === "X") {
-            navList3.className = 'toggle-main-nav2';
+// close the mobile-view nav
+navIcon.addEventListener("click", closeMobileNav => {
+    if (navIcon.innerHTML === "X") {
+        navList3.className = 'toggle-main-nav2';
     };
 })
-}
-navIcon.addEventListener("click", openMobileNav, false);
-//navIcon.addEventListener("click", closeMobileNav, false);
 
-
-// i believe the below code is a cleaner way to perform the openMobileNav function, but i'm doing something wrong
-/* navIcon.addEventListener("click", e => {
-    if (e.target.navList.length > 0) {
-        for (var i=0; i < navList.length; i++) {
-            navList[i].className = 'js-nav-build';
-        }
-    }
-} */ 
 
 // when click on nav, i want the hamburger icon class to change from 'a.toggle-nav-icon' to 'toggle-main-nav'
 // after that, i want the li items that have 'toggle-main-nav' to change to 'js-nav-build'
