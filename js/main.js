@@ -7,23 +7,16 @@ var navList3 = document.querySelectorAll('js-nav-build');
 
 // if click on nav icon, toggle mobile open nav class and build out nav directions
 
-navIcon.addEventListener("click", openMobileNav => {
-    if (navList.length > 0) {               // if the nav contains items    
+navIcon.addEventListener("click", function (openMobileNav) {
+    if (navList.length > 0) {
         for (var i=0; i < navList.length; i++) {
-            navList[i].classList.toggle('js-nav-build');      //change this from toggle-nav-icon to toggle-main-nav
+            navList[i].classList.toggle('js-nav-build');
         };
-        //navIcon.innerHTML = "X";
     };
 })
 
 // close the mobile-view nav
-navIcon.addEventListener("click", closeMobileNav => {
-    if (navList3.active = true) {
-        navIcon.textContent = "X";
-    }; //else {
 
-    //}
-})
 
 
 // when click on nav, i want the hamburger icon class to change from 'a.toggle-nav-icon' to 'toggle-main-nav'
