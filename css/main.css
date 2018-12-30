@@ -64,6 +64,11 @@ header {
     right: 10px;
 }
 
+.menu-img {
+    height: 30px;
+    width: 30px;
+}
+
 /* .headshot-image {
     max-width: 100%;
     max-height: auto;
@@ -73,8 +78,10 @@ header {
 
 nav {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    background-color: mediumaquamarine;
 }
+
 .nav-content {
     flex-direction: column;
     height: 3em;
@@ -109,7 +116,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0em;
+    margin: 1em 0em;
 }
 
 ul {
