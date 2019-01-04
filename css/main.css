@@ -250,6 +250,23 @@ h4 {
     margin: .2em 0em;
 }
 
+input {
+    cursor: pointer;
+    height: 20px;
+    width: 30px;
+}
+
+#check {
+    position: relative;
+    top: 25px;
+    left: 60px;
+    opacity: 0;
+}
+
+#job-title-visibility {
+    display: none;
+}
+
 /* Footer */
 footer {
     display: flex;
