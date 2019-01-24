@@ -23,7 +23,7 @@ navIcon.addEventListener("click", function (openMobileNav) {
 
 
 jobTitle.addEventListener("click", function (openJobDesc) {
-    if (jobTitle.checked = 'true') {
+    if (jobTitle.checked = "true") {
         jobTitle2.textContent = "collapse -";
         jobTitle3.style.cssText = "display: block";
     };
