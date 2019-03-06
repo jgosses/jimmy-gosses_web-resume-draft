@@ -26,12 +26,12 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: darkslategray;
+    background-color: mediumaquamarine;
     color: white;
     font-family: 'Libre Franklin', sans-serif;
-    height: 14em;
+    /* height: 14em; */
     max-width: 64em;
-    background-image: url("../images/jimmy-headshot-min-header-mobileview.jpg");
+    /* background-image: url("../images/jimmy-headshot-min-header-mobileview.jpg"); */
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -55,7 +55,7 @@ header {
 
 .tagline {
     font-size: 21px;
-    width: 9em;
+    /* width: 9em; */
 }
 
 #hamburger-nav-icon {
@@ -137,8 +137,8 @@ li {
 h1 {
     /* margin: 2em; */
     font-size: 27px;
-    height: 4em;
-    width: 10em;
+    /* height: 4em; */
+    /* width: 10em; */
     padding: 0em 0em 0em 1em;
 }
 
@@ -250,6 +250,30 @@ h4 {
     margin: .2em 0em;
 }
 
+input {
+    cursor: pointer;
+    height: 20px;
+    width: 30px;
+}
+
+#check {
+    position: relative;
+    top: 25px;
+    left: 60px;
+    opacity: 0;
+}
+
+#job-title-visibility {
+    display: none;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
 /********* Tablet Formatting ***************/
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -259,22 +283,23 @@ h4 {
     header {
         /* height: 14em; */
         flex-direction: column;
-        height: 27em;
-        background-image: url("../images/jimmy-headshot-min-desktop2.jpg");
+        /* height: 27em; */
+        /* background-image: url("../images/jimmy-headshot-min-desktop2.jpg"); */
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
 
     .tagline {
         font-size: 27px;
-        width: 10em;
+        /* width: 10em; */
     }
 
     .icon-tagline {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
-        height: 20em;
+        flex-direction: row;
+        align-items: center;
+        /* height: 20em; */
     }
 
     .header-title {
@@ -320,6 +345,7 @@ h4 {
 
     h1 { 
         font-size: 27px;
+        padding: 1em;
     }
 
     /* Main Content Formatting */
@@ -342,23 +368,25 @@ h4 {
     header {
         flex-direction: column;
         /* margin: 0em 2em; */
-        height: 43em;
-        background-image: url("../images/jimmy-headshot-min-desktop2.jpg");
+        /* height: 43em; */
+        /* background-image: url("../images/jimmy-headshot-min-desktop2.jpg"); */
         background-size: 100% auto;
         background-repeat: no-repeat;
-        max-width: 100%
+        max-width: 100%;
+        background-color: mediumaquamarine;
     }
 
     .tagline {
         font-size: 40px;
-        width: 10em;
+        /* width: 10em; */
     }
 
     .icon-tagline {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
-        height: 30em;
+        align-items: center;
+        flex-direction: row;
+        /* height: 30em; */
     }
 
     .header-title {
@@ -409,6 +437,7 @@ h4 {
     h1 {
         font-size: 40px;
         /* margin: 1.5em 6em; */
+        padding: 1em;
     }
     
 
