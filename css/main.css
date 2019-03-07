@@ -46,11 +46,15 @@ header {
     text-decoration: none;
 }
 
-.icon-tagline {
+#icon-tagline {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+#icon-tagline3 {
+    display: none;
 }
 
 .tagline {
@@ -84,7 +88,9 @@ nav {
 
 .nav-content {
     flex-direction: column;
-    height: 3em;
+    height: 10em;
+    align-items: center;
+    /* width: 22em; */
 }
 
 .navlink-mobile {
