@@ -11,7 +11,9 @@ var iconClass = document.getElementsByClassName('icon-tagline2');
 var jsNavBuild = document.getElementsByClassName('js-nav-build');
 var section = document.querySelector('icon-tagline');
 var sectionContent = document.createAttribute('icon-tagline2');
-var headerHide = document.getElementById('icon-tagline');
+var headerHide = document.getElementsByTagName("DIV")[0];
+/* var headerHide = document.getElementById('icon-tagline'); */
+var headerHide2 = document.getElementById('icon-tagline3');
 
 // if click on nav icon, toggle mobile open nav class and build out nav directions
 
@@ -20,13 +22,22 @@ navIcon.addEventListener("click", function (openMobileNav) {
         for (var i=0; i < navList.length; i++) {
             navList[i].classList.toggle('js-nav-build');
         };
-    if (headerHide) {
-        headerHide.id = 'icon-tagline3';
-    }
     };
+/*        if (headerHide) {
+            headerHide.id = 'icon-tagline3';
+        } */
     /* if (iconClass.style.cssText = 'display: inherit') {
         iconClass.style.cssText = "display: none"; */
     });
+
+navIcon.addEventListener("click", function() {
+    if (headerHide.id == "icon-tagline") {
+        headerHide.setAttribute("id", "icon-tagline3");
+    } else {
+        headerHide.setAttribute("id", "icon-tagline");
+    }
+});
+
     
 
 // close the mobile-view nav
