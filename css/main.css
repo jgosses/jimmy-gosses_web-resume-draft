@@ -58,6 +58,18 @@ header {
     display: none;
 }
 
+.social-bar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+}
+
+.header-social-img {
+    width: 29px;
+    height: 29px;
+}
+
 .tagline {
     font-size: 21px;
     /* width: 9em; */
@@ -72,6 +84,8 @@ header {
 .menu-img {
     height: 30px;
     width: 30px;
+    background-color: mediumaquamarine;
+    border-radius: 16px;
 }
 
 /* .headshot-image {
