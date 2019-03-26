@@ -51,6 +51,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
 }
 
 #icon-tagline3 {
@@ -86,10 +87,17 @@ nav {
     background-color: mediumaquamarine;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .nav-content {
     flex-direction: column;
-    height: 10em;
+    height: 14em;
     align-items: center;
+    justify-content: center;
     /* width: 22em; */
 }
 
@@ -121,7 +129,7 @@ nav {
 .js-nav-build {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     /* margin: 1em 0em; */
     width: 14em;
     height: 2em;
