@@ -199,6 +199,44 @@ h4 {
 
 /* Main content formatting */
 
+/* Style  the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: pink;
+    color: white;
+    width: 60%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 14px;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign */
+}
+
+.active, .collapsible:hover {
+    background-color: gray;
+}
+
+/* Style the collapsible content. hidden by default */
+.expand-text {
+    padding: 0 10px;
+    display: none;
+    overflow: hidden;
+    background-color: lightblue;
+    flex-direction: column;
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
