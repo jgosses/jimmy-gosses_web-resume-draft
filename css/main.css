@@ -199,6 +199,13 @@ h4 {
 
 /* Main content formatting */
 
+/* images */
+
+.headshot {
+    max-width: 100%;
+    padding: 10px 0px;
+}
+
 /* Style  the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: pink;
@@ -426,6 +433,12 @@ footer {
     .job-desc {
         padding: 0 50px;
     }
+
+/* images */
+.headshot {
+    max-width: 100%;
+    padding: 10px 0px;
+}
 }
 
 /************* Desktop Formatting ****************/
@@ -548,5 +561,11 @@ footer {
     .job-desc {
         padding: 0 100px;
     }
+
+/* images */
+.headshot {
+    max-width: 100%;
+    padding: 10px 0px;
+}
 
 }
