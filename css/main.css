@@ -106,11 +106,13 @@ nav {
     display: flex;
     justify-content: center;
     width: 100%;
+    position: sticky;
+    top: 0px;
 }
 
 .nav-content {
     flex-direction: column;
-    height: 14em;
+    /* height: 14em; */
     align-items: center;
     justify-content: center;
     /* width: 22em; */
@@ -438,6 +440,7 @@ footer {
 
     .nav-content {
         flex-direction: row;
+        height: 5em;
     }
 
     .toggle-nav-icon {
@@ -548,6 +551,7 @@ footer {
 
     .nav-content {
         flex-direction: row;
+        height: 5em;
     }
 
     /* h1, h2, h3, h4 */
@@ -567,7 +571,7 @@ footer {
     }
 
     main {
-        margin: 0em 2em 2em 2em;
+        margin: 0em 0em 2em 0em;
     }
 
     .lead-para {
