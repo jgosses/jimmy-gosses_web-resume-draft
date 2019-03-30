@@ -29,7 +29,7 @@ header {
     background-color: mediumaquamarine;
     color: white;
     font-family: 'Libre Franklin', sans-serif;
-    /* height: 14em; */
+    height: 6em;
     max-width: 64em;
     /* background-image: url("../images/jimmy-headshot-min-header-mobileview.jpg"); */
     background-size: 100% auto;
@@ -172,7 +172,7 @@ h1 {
     font-size: 27px;
     /* height: 4em; */
     /* width: 10em; */
-    padding: 0em 0em 0em 1em;
+    /* padding: 0em 0em 0em 1em; */
 }
 
 h2 {
@@ -460,7 +460,7 @@ footer {
 
     h1 { 
         font-size: 27px;
-        padding: 1em;
+        /* padding: 1em; */
     }
 
     /* Main Content Formatting */
@@ -559,7 +559,7 @@ footer {
     h1 {
         font-size: 40px;
         /* margin: 1.5em 6em; */
-        padding: 1em;
+        /* padding: 1em; */
     }
     
 
