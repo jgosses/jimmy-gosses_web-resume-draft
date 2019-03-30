@@ -29,7 +29,7 @@ header {
     background-color: mediumaquamarine;
     color: white;
     font-family: 'Libre Franklin', sans-serif;
-    height: 6em;
+    /* height: 6em; */
     max-width: 64em;
     /* background-image: url("../images/jimmy-headshot-min-header-mobileview.jpg"); */
     background-size: 100% auto;
@@ -74,6 +74,7 @@ header {
 .tagline {
     font-size: 21px;
     /* width: 9em; */
+    padding: 1em 0em;
 }
 
 #hamburger-nav-icon {
@@ -478,6 +479,10 @@ footer {
     max-width: 100%;
     padding: 10px 0px;
 }
+
+.headshot-container {
+    margin: 0em 10em;
+}
 }
 
 /************* Desktop Formatting ****************/
@@ -570,8 +575,12 @@ footer {
         max-width: 80em;
     }
 
-    main {
+    /* main {
         margin: 0em 0em 2em 0em;
+    } */
+
+    .headshot-container {
+        margin: 0em 18em;
     }
 
     .lead-para {
