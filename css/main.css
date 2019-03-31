@@ -445,6 +445,14 @@ footer {
         font-size: 14px;
     }
 
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: sticky;
+        top: 0px;
+    }
+
     .nav-content {
         flex-direction: row;
         height: 5em;
