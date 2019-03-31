@@ -401,6 +401,10 @@ input {
     margin: 10px 0px;
 }
 
+.project-img1 {
+    width: 340px;
+}
+
 /* Footer */
 footer {
     display: flex;
@@ -417,7 +421,7 @@ footer {
     margin: 10px;
     justify-content: space-between;
     position: relative;
-    left: 140px;
+    left: 110px;
 }
 
 .footer-social-img {
