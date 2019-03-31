@@ -364,6 +364,12 @@ input {
     display: none;
 }
 
+.intro-about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Footer */
 footer {
     display: flex;
