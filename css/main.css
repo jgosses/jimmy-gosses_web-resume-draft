@@ -334,6 +334,16 @@ h2.article-title {
     line-height: 30px;
 }
 
+.para-spacing-work {
+    padding: 1.5em 2em;
+    line-height: 27px;
+}
+
+#para-spacing-work {
+    padding: 1.5em 2em;
+    line-height: 27px;
+}
+
 #edu-spacing1 {
     padding: 5px;
     line-height: 25px;
@@ -398,11 +408,17 @@ input {
 }
 
 .project-desc-para {
-    margin: 10px 0px;
+    margin: 10px;
 }
 
 .project-img1 {
     width: 340px;
+}
+
+.project-synopsis {
+    display: flex;
+    flex-direction: column;
+    max-width: 50em;
 }
 
 .contact-me-blurb {
@@ -694,7 +710,12 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 30em;
-        padding: 0px 60px;
+        padding: 0px 45px;
+    }
+
+    #para-spacing-work {
+        padding: 0em 2em 1.5em 2em;
+
     }
 
     .lead-para {
@@ -748,7 +769,7 @@ footer {
 /* images */
 .headshot {
     max-width: 100%;
-    padding: 10px 0px;
+    padding: 70px 0px;
 }
 
 }

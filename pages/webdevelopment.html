@@ -46,6 +46,15 @@
                 <div class="website-screenshot-section">
                     <h3 class="web-screenshot-title">Merkur Club of America: A complete website rebuild</h3>
                     <p class="project-desc-para">The goal of this project was simplicity. The website in place previously was very bulky, had a lot of redirections throughout the site that resulted in a confusing user experience, and was not responsive. My goal was to create a new site using minimal javascript that had a positive user experience and was responsive across all devices.</p>
+                    <p>What I Learned:</p>
+                    <ul class="project-synopsis">
+                        <li>I worked through a lot of different theories on how to structure a navigation bar, ultimately using the transform method using an input checkbox</li>
+                        <li>That a lot can be done without Javascript. Ultimately you can get to a point that you need it (see the JS plugin used for the photo carousel), but it is a fun challenge to see how far you can get with pure CSS.</li>
+                    </ul>
+                    <p>My Favorite Part:</p>
+                    <ul class="project-synopsis">
+                        <li>Starting with a blank canvas and creating a clean site around a topic that I am passionate about. This website supports the car club that my dad and I are members of, and that I spent much of my childhood enjoying.  The club hasn't had anyone to dedicate the time towards upgrading their online presence, so I volunteered to help them out in a way that allowed me to learn more coding.</li>
+                    </ul>
                     <div class="website-screenshot-container1">
                         <a href="https://www.github.com/merkurclub2">
                         <img class="project-img1" src="../images/mca_screenshot.png" alt="Merkur Club of America Ground up Rebuild website">
@@ -61,6 +70,12 @@
                         <img class="project-img1" src="../images/mca_screenshot_mobile.png" alt="Merkur Club of America Ground up Rebuild website">
                         </a>
                     </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="website-screenshot-section">
+                    <h3 class="web-screenshot-title">My Personal Website</h3>
+                    <p class="project-desc-para">One issue I encountered during this project was related to the nav bar functionality in the tablet and desktop views. I wanted the full header to show initially, but upon scroll have only the nav bar stay at the top of the screen. With the goal to keep the site lightweight, I wanted to accomplish this using CSS, not JS. I knew that I should be able to accomplish this with the position: sticky command.  At first attempt, I was getting zero response to the scroll with the sticky positioning.  What I realized was that since the nav bar was within the header, the screen wasn’t scrolling past the nav bar within the header container. My solution was to pull the nav bar into the main body of the page, which then made the parent container the Main section.  Once I did that, I got the response I was expecting, and I then had to adjust the height within my UL of the nav bar so that the view wasn’t too tall.</p>
                 </div>
             </div>
         </main>
