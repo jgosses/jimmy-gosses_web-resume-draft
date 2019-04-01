@@ -211,9 +211,9 @@ h4 {
 
 /* Style  the button that is used to open and close the collapsible content */
 .collapsible {
-    background-color: pink;
+    background-color: cornflowerblue;
     color: white;
-    width: 60%;
+    width: 7em;
     border: none;
     outline: none;
     font-size: 15px;
@@ -405,12 +405,21 @@ input {
     width: 340px;
 }
 
+.contact-me-blurb {
+    margin: 2em .5em;
+}
+
+.article-date {
+    font-style: italic;
+    font-size: 14px;
+}
+
 /* Footer */
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 10px;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
     background-color: gainsboro;
 }
@@ -420,8 +429,8 @@ footer {
     width: 8em;
     margin: 10px;
     justify-content: space-between;
-    position: relative;
-    left: 110px;
+    /* position: relative;
+    left: 110px; */
 }
 
 .footer-social-img {

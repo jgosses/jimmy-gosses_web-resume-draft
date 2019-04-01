@@ -38,6 +38,12 @@ for (i = 0; i < lapse.length; i++) {
             content.style.display = "none";
         } else {
             content.style.display = "flex";
+        };
+        // replace expand with collapse on click and reverse
+        if (this.innerText === "expand") {
+            this.innerText = "collapse";
+        } else {
+            this.innerText = "expand";
         }
     })
 }
