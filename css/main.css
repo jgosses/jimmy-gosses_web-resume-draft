@@ -136,6 +136,7 @@ nav {
     padding: 0em 1em;
     color: white;
     text-decoration: none;
+    font-size: 27px;
 }
 
 .toggle-main-nav2 {
@@ -221,6 +222,21 @@ h4 {
     padding: 10px 0px;
 }
 
+.introduction-div {
+    display: flex;
+    width: 100%;
+    margin: 0em;
+}
+
+.introduction-title {
+    margin: 1em 1em 0em 1em;
+    font-size: 36px;
+}
+
+#intro-paragraph {
+    font-size: 22px;
+}
+
 /* Style  the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: #cda34f;
@@ -278,10 +294,12 @@ h4 {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    background-color: #f5f3e6;
+    margin: 5px;
 }
 
 h2.article-title {
-    font-size: 22px;
+    font-size: 30px;
     margin: 10px 30px;
 }
 
@@ -313,8 +331,9 @@ h2.article-title {
 
 .employment {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
+    background-color: #cda34f;
 }
 
 .employment-title {
