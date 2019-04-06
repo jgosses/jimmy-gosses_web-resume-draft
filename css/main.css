@@ -1,5 +1,5 @@
 /* Import fonts from Google */
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Libre+Franklin|Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Rajdhani|Roboto:300');
 
 /* Full-Page Formatting */
 
@@ -13,11 +13,24 @@ body {
     flex-direction: column;
     /* align-items: center; */
     max-width: 64em;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Exo 2', sans-serif;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Rajdhani', sans-serif;
 }
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+A:hover {
+    color: #CDA34F;
+    font-weight: bold;
 }
 
 /* Header Format */
@@ -26,9 +39,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: mediumaquamarine;
+    background-color: steelblue;
     color: white;
-    font-family: 'Libre Franklin', sans-serif;
     /* height: 6em; */
     max-width: 64em;
     /* background-image: url("../images/jimmy-headshot-min-header-mobileview.jpg"); */
@@ -79,14 +91,14 @@ header {
 
 #hamburger-nav-icon {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
 }
 
 .menu-img {
     height: 30px;
     width: 30px;
-    background-color: mediumaquamarine;
+    background-color: steelblue;
     border-radius: 16px;
 }
 
@@ -100,7 +112,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    background-color: mediumaquamarine;
+    background-color: steelblue;
 }
 
 .nav-container {
@@ -134,7 +146,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 1em;
+    /* margin: 1em; */
     font-size: 24px;
     color: whitesmoke;
     font-weight: bold;
@@ -211,7 +223,7 @@ h4 {
 
 /* Style  the button that is used to open and close the collapsible content */
 .collapsible {
-    background-color: cornflowerblue;
+    background-color: #cda34f;
     color: white;
     width: 7em;
     border: none;
@@ -235,7 +247,8 @@ h4 {
 }
 
 .active, .collapsible:hover {
-    background-color: gray;
+    background-color: steelblue;
+    color: #CDA34F;
 }
 
 /* Style the collapsible content. hidden by default */
@@ -243,7 +256,7 @@ h4 {
     padding: 0 10px;
     display: flex;
     overflow: hidden;
-    background-color: lightblue;
+    background-color: #f5f3e6;
     flex-direction: column;
     align-items: center;
     /* testing the scroll down feature */
@@ -256,6 +269,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     padding: 0em 2em;
+    background-color: #E9E7DA;
 }
 
 /* article/blog post formatting */
@@ -263,10 +277,11 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 h2.article-title {
-    font-size: 16px;
+    font-size: 22px;
     margin: 10px 30px;
 }
 
@@ -614,7 +629,6 @@ footer {
         background-size: 100% auto;
         background-repeat: no-repeat;
         max-width: 100%;
-        background-color: mediumaquamarine;
     }
 
     .tagline {
@@ -645,6 +659,7 @@ footer {
     .navlink-mobile {
         display: flex;
         padding: 0em 4em;
+        font-size: 18px;
     }
     
     nav {

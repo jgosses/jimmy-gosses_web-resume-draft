@@ -40,6 +40,7 @@ for (i = 0; i < lapse.length; i++) {
         } else {
             content.style.display = "flex";
         }; */
+        
         //scroll expand feature
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
