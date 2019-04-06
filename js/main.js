@@ -40,7 +40,7 @@ for (i = 0; i < lapse.length; i++) {
         } else {
             content.style.display = "flex";
         }; */
-        
+
         //scroll expand feature
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
@@ -48,10 +48,10 @@ for (i = 0; i < lapse.length; i++) {
             content.style.maxHeight = content.scrollHeight + "px";
         }
         // replace expand with collapse on click and reverse
-        if (this.innerText === "expand") {
-            this.innerText = "collapse";
+        if (this.innerText === "expand +") {
+            this.innerText = "collapse -";
         } else {
-            this.innerText = "expand";
+            this.innerText = "expand +";
         }
     })
 }
