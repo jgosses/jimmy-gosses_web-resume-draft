@@ -34,11 +34,18 @@ for (i = 0; i < lapse.length; i++) {
     lapse[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
-        if (content.style.display === "flex") {
+        // the hidden JS below is the functionality to totally hide the content
+        /* if (content.style.display === "flex") {
             content.style.display = "none";
         } else {
             content.style.display = "flex";
-        };
+        }; */
+        //scroll expand feature
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
         // replace expand with collapse on click and reverse
         if (this.innerText === "expand") {
             this.innerText = "collapse";
@@ -47,33 +54,3 @@ for (i = 0; i < lapse.length; i++) {
         }
     })
 }
-
-    
-
-// close the mobile-view nav
-
-
-
-/* jobTitle.addEventListener("click", function (openJobDesc) {
-    if (jobTitle.checked = "true") {
-        jobTitle2.textContent = "collapse -";
-        jobTitle3.style.cssText = "display: block";
-    };
-}) */
-
-// when click on nav, i want the hamburger icon class to change from 'a.toggle-nav-icon' to 'toggle-main-nav'
-// after that, i want the li items that have 'toggle-main-nav' to change to 'js-nav-build'
-
-/* 
-var navList2 = document.querySelectorAll('toggle-nav-icon');
-var navClose = document.querySelector('hamburger-nav-icon')
-var navList3 = document.querySelectorAll('js-nav-build');
-var jobTitle = document.getElementById('check');
-var jobTitle2 = document.getElementById('check-content');
-var jobTitle3 = document.getElementById('job-title-visibility');
-var iconClass = document.getElementsByClassName('icon-tagline2');
-var jsNavBuild = document.getElementsByClassName('js-nav-build');
-var section = document.querySelector('icon-tagline');
-var sectionContent = document.createAttribute('icon-tagline2');
-var headerHide = document.getElementById('icon-tagline');
-var headerHide2 = document.getElementById('icon-tagline3'); */
