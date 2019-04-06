@@ -329,6 +329,11 @@ h2.article-title {
     color: lightslategray;
 }
 
+.job-spacing {
+    line-height: 32px;
+    color: lightslategray;
+}
+
 .employment {
     display: flex;
     /* align-items: center; */
