@@ -11,7 +11,6 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
 body {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     max-width: 64em;
     font-family: 'Roboto', sans-serif;
 }
@@ -45,9 +44,7 @@ header {
     justify-content: space-between;
     background-color: steelblue;
     color: white;
-    /* height: 6em; */
     max-width: 64em;
-    /* background-image: url("../images/jimmy-headshot-min-header-mobileview.jpg"); */
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -89,7 +86,6 @@ header {
 
 .tagline {
     font-size: 21px;
-    /* width: 9em; */
     padding: 1em 0em;
 }
 
@@ -105,11 +101,6 @@ header {
     background-color: steelblue;
     border-radius: 16px;
 }
-
-/* .headshot-image {
-    max-width: 100%;
-    max-height: auto;
-} */
 
 /* Nav bar */
 
@@ -129,14 +120,11 @@ nav {
 
 .nav-content {
     flex-direction: column;
-    /* height: 14em; */
     align-items: center;
     justify-content: center;
-    /* width: 22em; */
 }
 
 .navlink-mobile {
-    /* display: none; */
     padding: 0em 1em;
     color: white;
     text-decoration: none;
@@ -151,7 +139,6 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* margin: 1em; */
     font-size: 24px;
     color: whitesmoke;
     font-weight: bold;
@@ -165,7 +152,6 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* margin: 1em 0em; */
     width: 14em;
     height: 2em;
 }
@@ -186,11 +172,7 @@ li {
 /* h1, h2, h3, h4 */
 
 h1 {
-    /* margin: 2em; */
     font-size: 27px;
-    /* height: 4em; */
-    /* width: 10em; */
-    /* padding: 0em 0em 0em 1em; */
 }
 
 h2 {
@@ -206,16 +188,6 @@ h4 {
     margin: 5px 0px;
     font-size: 20px;
 }
-
-/* nav {
-    display: none;
-} */
-
-
-/* .header-title {
-    display: flex;
-    align-items: start;
-} */
 
 /* Main content formatting */
 
@@ -300,7 +272,6 @@ h4 {
     background-color: #f5f3e6;
     flex-direction: column;
     align-items: center;
-    /* testing the scroll down feature */
     max-height: 6em;
     transition: max-height 0.5s ease-out;
 }
@@ -361,7 +332,6 @@ h2.article-title {
 
 .employment {
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
     background-color: #cda34f;
 }
@@ -470,7 +440,6 @@ input {
     flex-direction: column;
     align-items: center;
     border-style: ridge;
-    /* padding: 0px 20px; */
     margin: 2em 0em;
 }
 
@@ -512,8 +481,6 @@ footer {
     width: 8em;
     margin: 10px;
     justify-content: space-between;
-    /* position: relative;
-    left: 110px; */
 }
 
 .footer-social-img {
@@ -522,24 +489,29 @@ footer {
     height: 29px;
 }
 
+#contact-page {
+    height: 33em;
+}
+
+.contact-footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
 /********* Tablet Formatting ***************/
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-    /* should be min-width: 401px */
     /* Header Format */
 
     header {
-        /* height: 14em; */
         flex-direction: column;
-        /* height: 27em; */
-        /* background-image: url("../images/jimmy-headshot-min-desktop2.jpg"); */
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
 
     .tagline {
         font-size: 27px;
-        /* width: 10em; */
     }
 
     .icon-tagline {
@@ -547,7 +519,6 @@ footer {
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
-        /* height: 20em; */
     }
 
     .header-title {
@@ -603,7 +574,6 @@ footer {
 
     h1 { 
         font-size: 27px;
-        /* padding: 1em; */
     }
 
     /* Main Content Formatting */
@@ -647,12 +617,6 @@ footer {
     padding: 0px 5px;
 }
 
-/* .project-img1 {
-    /* 1279x613
-    width: 639.5px;
-    height: 306.5px;
-} */
-
 /* images */
 .headshot {
     width: 380.836px;
@@ -673,9 +637,6 @@ footer {
 
     header {
         flex-direction: column;
-        /* margin: 0em 2em; */
-        /* height: 43em; */
-        /* background-image: url("../images/jimmy-headshot-min-desktop2.jpg"); */
         background-size: 100% auto;
         background-repeat: no-repeat;
         max-width: 100%;
@@ -683,7 +644,6 @@ footer {
 
     .tagline {
         font-size: 40px;
-        /* width: 10em; */
     }
 
     .icon-tagline {
@@ -691,7 +651,6 @@ footer {
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
-        /* height: 30em; */
     }
 
     .header-title {
@@ -743,8 +702,6 @@ footer {
 
     h1 {
         font-size: 40px;
-        /* margin: 1.5em 6em; */
-        /* padding: 1em; */
     }
     
 
@@ -755,9 +712,6 @@ footer {
         max-width: 80em;
     }
 
-    /* main {
-        margin: 0em 0em 2em 0em;
-    } */
 
     .headshot-container {
         margin: 0em 0em;
