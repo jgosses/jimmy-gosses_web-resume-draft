@@ -470,16 +470,20 @@ input {
 footer {
     display: flex;
     justify-content: space-between;
-    font-size: 10px;
+    font-size: 7px;
     flex-direction: row-reverse;
     align-items: center;
     background-color: gainsboro;
 }
 
+.icon-cred {
+    display: flex;
+}
+
 .social-bar-footer {
     display: flex;
-    width: 8em;
-    margin: 10px;
+    width: 12em;
+    margin: 10px 15px;
     justify-content: space-between;
 }
 
@@ -626,6 +630,11 @@ footer {
 
 .headshot-container {
     margin: 0em 0em;
+}
+
+/* footer */
+.icon-cred {
+    display: none;
 }
 }
 
@@ -792,6 +801,11 @@ footer {
 .headshot {
     max-width: 100%;
     padding: 70px 0px;
+}
+
+/* footer */
+.icon-cred {
+    display: none;
 }
 
 }
