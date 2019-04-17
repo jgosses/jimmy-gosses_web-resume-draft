@@ -216,6 +216,7 @@ h4 {
 .offer-section {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 }
 
 .para-spacing-offer {
@@ -377,11 +378,13 @@ h2.article-title {
 .para-spacing-work {
     padding: 1.5em 2em;
     line-height: 27px;
+    max-width: 100%;
 }
 
 #para-spacing-work {
     padding: 1.5em 2em;
     line-height: 27px;
+    max-width: 100%;
 }
 
 #edu-spacing1 {
