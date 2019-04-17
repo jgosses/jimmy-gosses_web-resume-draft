@@ -447,6 +447,7 @@ input {
     align-items: center;
     border-style: ridge;
     margin: 2em 0em;
+    max-width: 100%;
 }
 
 .project-desc-para {
