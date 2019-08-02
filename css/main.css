@@ -217,6 +217,7 @@ h4 {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    align-items: center;
 }
 
 .para-spacing-offer {
@@ -331,6 +332,9 @@ h2.article-title {
 .job-spacing {
     line-height: 32px;
     color: lightslategray;
+    max-width: 50em;
+    text-align: left;
+    padding: 1em 4em;
 }
 
 .employment {
@@ -451,7 +455,7 @@ input {
 }
 
 .project-desc-para {
-    margin: 10px;
+    margin: 10px 50px;
 }
 
 .project-img1 {
