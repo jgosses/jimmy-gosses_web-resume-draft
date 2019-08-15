@@ -459,7 +459,7 @@ input {
 }
 
 .project-img1 {
-    width: 340px;
+    width: 320px;
 }
 
 .project-synopsis {
@@ -631,6 +631,10 @@ footer {
 
     .website-screenshot-section {
         padding: 0px 5px;
+    }
+
+    .project-img1 {
+        width: 460px;
     }
 
     /* images */
@@ -805,7 +809,8 @@ footer {
 
     .project-img1 {
         /* 1279x613 */
-        width: 959.25px;
+        /*width: 959.25px;*/
+        width: 879.25px;
         height: 459.75px;
     }
 
