@@ -374,6 +374,12 @@ h2.article-title {
     max-width: 100%;
 }
 
+.para-spacing2 {
+    padding: 0em 2em;
+    line-height: 32px;
+    max-width: 100%;
+}
+
 #para-spacing {
     padding: 10px 2em;
     line-height: 30px;
