@@ -274,7 +274,7 @@ h4 {
     background-color: #f5f3e6;
     flex-direction: column;
     align-items: center;
-    max-height: 6em;
+    max-height: 10em;
     transition: max-height 0.5s ease-out;
     max-width: 100%;
 }
@@ -369,7 +369,7 @@ h2.article-title {
 }
 
 .para-spacing {
-    padding: 1.5em 2em;
+    padding: .7em 0em;
     line-height: 32px;
     max-width: 100%;
 }
@@ -533,7 +533,8 @@ footer {
     }
 
     .tagline {
-        font-size: 27px;
+        font-size: 40px;
+        padding: 0.7em 0em;
     }
 
     .icon-tagline {
@@ -602,6 +603,11 @@ footer {
     
     .lead-para {
         max-width: 30em;
+    }
+
+    .para-spacing {
+        padding: 1.5em 2em;
+
     }
 
     .job-desc {
@@ -770,6 +776,7 @@ footer {
         padding: 0em 2em 1.5em 2em;
 
     }
+
 
     .lead-para {
         max-width: 64em;
